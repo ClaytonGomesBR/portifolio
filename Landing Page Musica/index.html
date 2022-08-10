@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Um Curso pensado para quem deseja aprender do início ou apenas aprimorar suas técnicas">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="js/script.js"></script>
+    <title>Landing Page</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+            </div>
+            <nav>
+                <ul class="menu-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Contatos</a></li>
+                    <img class="close-icon" src="img/close-icon.png">
+                </ul>
+            </nav>
+            <button class="menu-icon"><img src="img/menu-icon.png"></button>
+        </header>
+        <main>
+            <section class="main_left">
+                <h1><b>Escola de Música </b>& Arte</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nam vitae ab ratione dolorum nisi ea inventore culpa quaerat tenetur voluptatum cupiditate unde, ipsum sint assumenda quo architecto aliquid error!
+                </p>
+                <div class="main_left-btn">
+                    <button>Começar</button>
+                    <button>Ver mais</button>
+                </div>
+            </section>
+            <section class="main_right">
+                <img src="img/guitarra.png" width="100%" alt="quadro" >    
+            </section>
+        </main>
+    </div>
+    <script>
+        var menu = document.querySelector('nav');
+        var menuIcon = document.querySelector('.menu-icon');
+        var closeIcon = document.querySelecton('.close-icon');
+        menuIcon.addEventListener('click', ()=>{
+            menu.classList.add('active');
+        })
+        closeIcon.addEventListener('click',()=>{
+            menu.classList.remove('active');
+        });
+    </script>
+</body>
+</html>
